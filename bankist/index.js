@@ -37,8 +37,12 @@ const labelBalance = document.querySelector(".balance__value");
 const labelSumOut = document.querySelector(".summary__value--out");
 const labelSumIn = document.querySelector(".summary__value--in");
 
+const inputLoanAmount = document.querySelector(".form__input--loan");
 const amountToTransfer = document.querySelector(".form__input--amount");
 const amountToUsername = document.querySelector(".form__input--to");
+
+const btnSort = document.querySelector(".btn--sort");
+const btnLoan = document.querySelector(".form__btn--loan");
 const btnTransfer = document.querySelector(".form__btn--transfer");
 const btnLogin = document.querySelector(".login__btn");
 const inputLoginUsername = document.querySelector(".login__input--user");
@@ -97,6 +101,7 @@ const updateUI = function(acc) {
 /////////////////////////////////////////////////
 //Event handlers
 let currentAccount;
+let sorted = false;
 
 
 btnLogin.addEventListener('click', function (e) {
@@ -147,4 +152,24 @@ btnTransfer.addEventListener("click", function (e) {
     console.log(amountToUsername.value);
   }
   
+})
+
+btnLoan.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  const amount = Number(inputLoanAmount.value);
+
+  if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
+    currentAccount.movements.push(amount);
+    
+    updateUI(currentAccount);
+  }
+  inputLoanAmount.value = '';
+})
+
+
+btnSort.addEventListener('click', function (e) {
+  e.preventDefault();
+  displayMovements(currentAccount.movements, !sorted);
+  sorted = !sorted;
 })
