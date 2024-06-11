@@ -37,6 +37,9 @@ const labelBalance = document.querySelector(".balance__value");
 const labelSumOut = document.querySelector(".summary__value--out");
 const labelSumIn = document.querySelector(".summary__value--in");
 
+const amountToTransfer = document.querySelector(".form__input--amount");
+const amountToUsername = document.querySelector(".form__input--to");
+const btnTransfer = document.querySelector(".form__btn--transfer");
 const btnLogin = document.querySelector(".login__btn");
 const inputLoginUsername = document.querySelector(".login__input--user");
 const inputLoginPin = document.querySelector(".login__input--pin");
@@ -116,4 +119,32 @@ btnLogin.addEventListener('click', function (e) {
 
         updateUI(currentAccount);
     }
+})
+
+
+btnTransfer.addEventListener("click", function (e) {
+  e.preventDefault();
+  const amount = Number(amountToTransfer.value);
+  const receiverAcc = accounts.find(acc => acc.owner === amountToUsername.value);
+  
+  amountToTransfer.value = amountToUsername.value = '';
+
+  //const checks = amount > 0 && receiverAcc && currentAccount.balance >= amount && receiverAcc?.username !== currentAccount.username;
+
+
+  if (
+    amount > 0 &&
+    receiverAcc &&
+    currentAccount.balance >= amount &&
+    receiverAcc?.owner !== currentAccount.owner
+  ) {
+    currentAccount.movements.push(-amount);
+    receiverAcc.movements.push(amount);
+
+    updateUI(currentAccount);
+  } else {
+    console.log(amountToTransfer.value);
+    console.log(amountToUsername.value);
+  }
+  
 })
