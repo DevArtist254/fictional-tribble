@@ -67,6 +67,122 @@ class Cycling extends Workout {
     }
 }
 
-const run = new Running([24, 44], 2000, 120, 4);
+// const run = new Running([24, 44], 2000, 120, 4);
+// const cycling = new Cycling([34, 54], 300, 240, 7);
 
-console.log(run);
+// console.log(cycling);
+
+////////////////////////////////////
+//App 
+const form = document.querySelector(".form");
+const containerWorkouts = document.querySelector(".workouts");
+const inputType = document.querySelector(".form__input--type");
+const inputDistance = document.querySelector(".form__input--distance");
+const inputDuration = document.querySelector(".form__input--duration");
+const inputCadence = document.querySelector(".form__input--cadence");
+const inputElevation = document.querySelector(".form__input--elevation");
+
+
+class App {
+    #map;
+    #mapZoomLevel = 13;
+    #mapEvent;
+    #workouts = [];
+
+    constructor() {
+        this._getPosition();
+
+        this._getLocalStorage();
+
+        form.addEventListener('submit', this._newWorkout.bind(this));
+        inputType.addEventListener('change', this._toggleElevationField);
+        containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
+    }
+
+    _getPosition(){
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                this._loadMap.bind(this),
+                function () {
+                    alert('Could not get your position');
+                }
+            )
+        }
+    }
+
+    _loadMap(position) {
+        const { latitude } = position.coords;
+        const { longitude } = position.coords;
+
+        const coords = [latitude, longitude];
+
+        this.#map = L.map('map').setView(coords, this.#mapZoomLevel);
+
+        L.titleLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(this.#map);
+
+        this.#map.on('click', this._showForm.bind(this));
+
+        this.#workouts.forEach(work => {
+            this._renderWorkout(work);
+        })
+    }
+
+
+    _newWorkout(e) {
+        const validInputs = (inputs) => inputs.every(el => Number.isFinite(el));
+        const allPositive = (inputs) => inputs.every(el => el > 0);
+
+        e.preventDefault();
+
+        const type = inputType.value;
+        const distance = +inputDistance.value;
+        const duration = +inputDuration.value;
+        const { lat, lng } = this.#mapEvent.latlng;
+        let workout;
+
+        if (type === 'running') {
+            const cadence = +inputCadence.value;
+            const inputs = [distance, duration, cadence];
+
+            if (!validInputs(inputs) || !allPositive(inputs)) return alert('Inputs have to be positive numbers!');
+
+            workout = new Running([lat, lng], distance, duration, cadence);
+        }
+
+        if (type === 'cycling') {
+            const elevation = +inputElevation.value;
+            const inputs = [distance, duration, elevation];
+
+            if (!validInputs(inputs) || !allPositive(inputs)) return alert("Inputs have to be positive numbers!");
+
+            workout = new Cycling([lat, lng], distance, duration, elevation);
+        }
+
+        this.#workouts.push(workout);
+
+        this._renderWorkoutMarker(workout);
+
+        this._renderWorkout(workout);
+
+        this.hideForm();
+
+        this._setLocalStorage();
+    }
+
+    _setLocalStorage() {
+        localStorage.setItem('workouts', JSON.stringify(this.#workouts));
+    }
+
+    _getLocalStorage() {
+        const data = JSON.parse(localStorage.getItem('workouts'));
+
+        if(!data) return
+        
+        this.#workouts.forEach(work => {
+            this._renderWorkout(work);
+        });
+    }
+}
