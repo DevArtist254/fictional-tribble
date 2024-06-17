@@ -2,7 +2,9 @@ import {TIMEOUT_SEC} from './config.js'
 
 const timeout = function (sec) {
     return new Promise(function (_, reject) {
-        setTimeout(() => reject(new Error(`Request took too long! Timeout after ${sec} seconds`), sec * 1000));
+        setTimeout(function () {
+            reject(new Error(`Request took too long! Timeout after ${sec} seconds`));
+        }, sec * 1000);
     })
 }
 
