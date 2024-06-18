@@ -690,7 +690,7 @@ const loadSearchResults = async function(query) {
 };
 const getSearchResultsPage = function(page = state.search.page) {
     state.search.page = page;
-    const start = (page - 1) * state.search.resultsPerPage;
+    const start = (page - 1) * state.search.resultsPage;
     const end = page * state.search.resultsPage;
     return state.search.results.slice(start, end);
 };
@@ -903,7 +903,6 @@ class View {
         if (!data || Array.isArray(data) && data.length === 0) return this.renderError();
         this._data = data;
         const markup = this._generateMarkup();
-        console.log(markup);
         if (!render) return markup;
         this._clear();
         this._parentElement.insertAdjacentHTML("afterbegin", markup);
@@ -3112,7 +3111,9 @@ class ResultsView extends (0, _viewJsDefault.default) {
     _errorMessage = "No recipes found for your query! Please try again";
     _message = "";
     _generateMarkup() {
-        return this._data.map((res)=>(0, _previewViewJsDefault.default).render(res, false)).join("");
+        return this._data.map((result)=>{
+            return (0, _previewViewJsDefault.default).render(result, false);
+        }).join("");
     }
 }
 exports.default = new ResultsView();
@@ -3126,7 +3127,7 @@ var _iconsSvg = require("url:../../img/icons.svg"); // Parcel 2
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class PreviewView extends (0, _viewJsDefault.default) {
     _parentElement = "";
-    _generateMarkeup() {
+    _generateMarkup() {
         const id = window.location.hash.slice(1);
         return `
       <li class="preview">
