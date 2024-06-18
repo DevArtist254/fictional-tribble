@@ -39,3 +39,35 @@ export const loadRecipe = async function (id) {
       throw err;
     }
 }
+
+export const loadSearchResults = async function (query) {
+    try {
+        state.search.query = query;
+
+        const data = await AJAX(`${API_URL}?search=${query}&key=${KEY}`);
+
+        state.search.results = data.data.recipes.map(rec => {
+            return {
+              id: rec.id,
+              title: rec.title,
+              publisher: rec.publisher,
+              image: rec.image_url,
+              ...(rec.key && {key: rec.key}),
+            };
+        })
+
+        state.search.page = 1;
+    } catch (err) {
+        console.error(`${err} ***`);
+        throw err;
+    }
+};
+
+export const getSearchResultsPage = function(page = state.search.page) {
+    state.search.page = page;
+
+    const start = (page - 1) * state.search.resultsPerPage;
+    const end = page * state.search.resultsPage;
+
+    return state.search.results.slice(start, end);
+}
