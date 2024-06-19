@@ -2810,7 +2810,7 @@
 103/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/utils/test/input/config/config.json1718604455336230619 0
 97/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@swc/helpers/src/_async_generator.mjs1718604434042626482 0
 81/home/devartist/JS_learn/coding/Basics/forkify/node_modules/svgo/plugins/_path.js1718604438089344352 0
-73/home/devartist/JS_learn/coding/Basics/forkify/dist/index.e37f48ea.js.map1718676732523917197 0
+73/home/devartist/JS_learn/coding/Basics/forkify/dist/index.e37f48ea.js.map1718731066081101917 0
 102/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/core/test/fixtures/parcel/other.js1718604450402834245 0
 87/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/events/src/index.js1718604447242793958 0
 100/home/devartist/JS_learn/coding/Basics/forkify/node_modules/core-js/actual/function/virtual/index.js1718617279471065490 0
@@ -5899,7 +5899,7 @@
 112/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/features/viewport-unit-variants.js1718604435049305874 0
 102/home/devartist/JS_learn/coding/Basics/forkify/node_modules/core-js/full/string/virtual/starts-with.js1718617279597733350 0
 107/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/core/test/fixtures/config-node-pipeline1718604448689479059 1
-69/home/devartist/JS_learn/coding/Basics/forkify/dist/index.e37f48ea.js1718676732520583826 0
+69/home/devartist/JS_learn/coding/Basics/forkify/dist/index.e37f48ea.js1718731066077768552 0
 92/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/transformer-posthtml/src1718604442012727445 1
 102/home/devartist/JS_learn/coding/Basics/forkify/node_modules/css-select/lib/pseudo-selectors/index.d.ts1718604431962600212 0
 105/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/optimizer-svgo/node_modules/csso/dist1718604451852852755 1
@@ -8118,7 +8118,7 @@
 127/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/core/test/fixtures/targets-default-distdir-one/package.json1718604454609554655 0
 96/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/features/brotli.js1718604432679275927 0
 94/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/features/calc.js1718604432679275927 0
-51/home/devartist/JS_learn/coding/Basics/forkify/dist1718676732523917197 1
+51/home/devartist/JS_learn/coding/Basics/forkify/dist1718731066081101917 1
 103/home/devartist/JS_learn/coding/Basics/forkify/node_modules/core-js/features/reflect/define-metadata.js1718617279334397536 0
 105/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/features/canvas-blending.js1718604432679275927 0
 101/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/features/canvas-text.js1718604432679275927 0
@@ -8714,7 +8714,7 @@
 77/home/devartist/JS_learn/coding/Basics/forkify/node_modules/js-yaml/README.md1718604432169269488 0
 83/home/devartist/JS_learn/coding/Basics/forkify/node_modules/js-yaml/dist/js-yaml.js1718604432062601474 0
 91/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/regions/BI.js1718604432619275169 0
-67/home/devartist/JS_learn/coding/Basics/forkify/src/js/controller.js1718676526604968643 0
+67/home/devartist/JS_learn/coding/Basics/forkify/src/js/controller.js1718754840718120912 0
 97/home/devartist/JS_learn/coding/Basics/forkify/node_modules/@parcel/transformer-babel/src/flow.js1718604443169408804 0
 78/home/devartist/JS_learn/coding/Basics/forkify/node_modules/htmlnano/index.mjs1718604437639338652 0
 91/home/devartist/JS_learn/coding/Basics/forkify/node_modules/caniuse-lite/data/regions/BJ.js1718604432619275169 0

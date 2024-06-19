@@ -597,19 +597,19 @@ var _resultsViewJsDefault = parcelHelpers.interopDefault(_resultsViewJs);
 var _runtime = require("regenerator-runtime/runtime");
 const controlRecipe = async function() {
     try {
-        //const id = window.location.hash.slice(1);
-        const id = "5ed6604591c37cdc054bc886";
+        const id = window.location.hash.slice(1);
         if (!id) return;
         (0, _recipeViewJsDefault.default).renderSpinner();
         await _modelJs.loadRecipe(id);
         (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
     } catch (err) {
+        (0, _recipeViewJsDefault.default).renderError();
         console.error(err);
     }
 };
 const controlSearchResults = async function() {
     try {
-        //recipeView.renderSpinner();
+        (0, _recipeViewJsDefault.default).renderSpinner();
         const query = (0, _searchViewJsDefault.default).getQuery();
         if (!query) return;
         console.log(query);
@@ -617,7 +617,7 @@ const controlSearchResults = async function() {
         (0, _resultsViewJsDefault.default).render(_modelJs.getSearchResultsPage());
     } catch (err) {}
 };
-//recipeView.addHandlerRender(controlRecipe);
+(0, _recipeViewJsDefault.default).addHandlerRender(controlRecipe);
 (0, _searchViewJsDefault.default).addHandlerSearch(controlSearchResults);
 console.log("Hello world");
 

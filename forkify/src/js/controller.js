@@ -9,8 +9,7 @@ import "regenerator-runtime/runtime";
 
 const controlRecipe = async function () {
     try {
-        //const id = window.location.hash.slice(1);
-        const id = "5ed6604591c37cdc054bc886";
+        const id = window.location.hash.slice(1);
         if(!id) return;
 
         recipeView.renderSpinner();
@@ -19,13 +18,14 @@ const controlRecipe = async function () {
 
         recipeView.render(model.state.recipe);
     } catch (err) {
+        recipeView.renderError();
         console.error(err);
     }
 }
 
 const controlSearchResults = async function () {
     try {
-        //recipeView.renderSpinner();
+        recipeView.renderSpinner();
 
         const query = searchView.getQuery();
         if(!query) return;
@@ -40,7 +40,7 @@ const controlSearchResults = async function () {
     }
 }
 
-//recipeView.addHandlerRender(controlRecipe);
+recipeView.addHandlerRender(controlRecipe);
 searchView.addHandlerSearch(controlSearchResults);
 
 console.log("Hello world");
