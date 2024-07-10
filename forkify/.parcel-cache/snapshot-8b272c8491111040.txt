@@ -4246,7 +4246,7 @@
 95/home/devartist/pr/fictional-tribble/forkify/node_modules/css-tree/cjs/syntax/node/Selector.cjs1720488232237111601 0
 90/home/devartist/pr/fictional-tribble/forkify/node_modules/css-tree/cjs/tokenizer/index.cjs1720488227448055716 0
 130/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/Selector.js1720488230041085975 0
-67/home/devartist/pr/fictional-tribble/forkify/dist/logo.726d37a8.png1720488147641125438 0
+67/home/devartist/pr/fictional-tribble/forkify/dist/logo.726d37a8.png1720489358755458389 0
 106/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/runtime-js/lib/helpers/get-worker-url.js1720488223396008432 0
 91/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/packager-svg/package.json1720488222648999715 0
 111/home/devartist/pr/fictional-tribble/forkify/node_modules/@msgpackr-extract/msgpackr-extract-linux-x64/index.js1720488224635022891 0
@@ -5006,7 +5006,7 @@
 86/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/actual/string/sup.js1720488219892967555 0
 108/home/devartist/pr/fictional-tribble/forkify/node_modules/@babel/highlight/node_modules/ansi-styles/index.js1720488226554045284 0
 90/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_get/package.json1720488222992003718 0
-67/home/devartist/pr/fictional-tribble/forkify/dist/index.e37f48ea.js1720488147640125427 0
+67/home/devartist/pr/fictional-tribble/forkify/dist/index.e37f48ea.js1720489515475327011 0
 89/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/utils/src/collection.js1720488222776001197 0
 68/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/fs1720488227415055331 1
 108/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/svgo/README.md1720488226885049147 0
@@ -5119,7 +5119,7 @@
 92/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/core/lib/Transformation.js1720488225402031841 0
 99/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/internals/advance-string-index.js1720488219377961545 0
 93/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/function/virtual/bind.js1720488219420962047 0
-68/home/devartist/pr/fictional-tribble/forkify/dist/index.f7626f62.css1720488147641125438 0
+68/home/devartist/pr/fictional-tribble/forkify/dist/index.f7626f62.css1720489358762458473 0
 94/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/full/typed-array/subarray.js1720488219889967520 0
 86/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/workers/lib/types.js1720488225434032215 0
 125/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/utils/names.js1720488227886060828 0
@@ -5180,7 +5180,7 @@
 92/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/package-manager/src/Npm.js1720488223950014897 0
 101/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-js/src/JSTransformer.js1720488229631081191 0
 97/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/core/test/InternalAsset.test.js1720488223777012878 0
-49/home/devartist/pr/fictional-tribble/forkify/dist1720488147641125438 1
+49/home/devartist/pr/fictional-tribble/forkify/dist1720489515476327023 1
 112/home/devartist/pr/fictional-tribble/forkify/node_modules/csso/node_modules/css-tree/lib/syntax/config/walker.js1720488221915991162 0
 105/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js1720488223472009319 0
 120/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/replace/Number.js1720488233911131135 0
@@ -5222,7 +5222,7 @@
 111/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/actual/object/get-own-property-descriptors.js1720488219645964672 0
 96/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/features/string/code-points.js1720488219430962164 0
 81/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/object/is.js1720488219731965676 0
-72/home/devartist/pr/fictional-tribble/forkify/dist/index.f7626f62.css.map1720488147641125438 0
+72/home/devartist/pr/fictional-tribble/forkify/dist/index.f7626f62.css.map1720489358763458485 0
 127/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/index.js1720488220650976400 0
 79/home/devartist/pr/fictional-tribble/forkify/node_modules/@trysound/sax/LICENSE1720488221268983612 0
 88/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/typed-array/from.js1720488219635964556 0
@@ -5241,7 +5241,7 @@
 79/home/devartist/pr/fictional-tribble/forkify/node_modules/@babel/code-frame/lib1720488221538986762 1
 105/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-sass/lib/SassTransformer.js1720488221525986611 0
 116/home/devartist/pr/fictional-tribble/forkify/node_modules/css-select/node_modules/domutils/lib/esm/manipulation.d.ts1720488220336972736 0
-68/home/devartist/pr/fictional-tribble/forkify/dist/icons.dfd7a6db.svg1720488147640125427 0
+68/home/devartist/pr/fictional-tribble/forkify/dist/icons.dfd7a6db.svg1720489358781458700 0
 102/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_to_property_key/package.json1720488222999003800 0
 83/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/number/virtual1720488219920967882 1
 107/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/proposals/change-array-by-copy-stage-4.js1720488219426962117 0
@@ -5262,7 +5262,7 @@
 82/home/devartist/pr/fictional-tribble/forkify/node_modules/semver/internal/debug.js1720488219351961242 0
 73/home/devartist/pr/fictional-tribble/forkify/node_modules/htmlparser2/lib1720488220004968862 1
 88/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/set/intersection.js1720488219706965384 0
-70/home/devartist/pr/fictional-tribble/forkify/dist/favicon.8b2f57bf.png1720488147640125427 0
+70/home/devartist/pr/fictional-tribble/forkify/dist/favicon.8b2f57bf.png1720489358733458127 0
 92/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/workers/src/core-worker.js1720488225376031538 0
 78/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/packager-raw1720488225703035354 1
 111/home/devartist/pr/fictional-tribble/forkify/node_modules/caniuse-lite/data/features/kerning-pairs-ligatures.js1720488227052051095 0
@@ -5321,7 +5321,7 @@
 96/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_using_ctx/package.json1720488223001003823 0
 84/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/utils/package.json1720488228751070922 0
 100/home/devartist/pr/fictional-tribble/forkify/node_modules/caniuse-lite/data/features/svg-fragment.js1720488228383066627 0
-65/home/devartist/pr/fictional-tribble/forkify/src/js/controller.js1720488147641125438 0
+65/home/devartist/pr/fictional-tribble/forkify/src/js/controller.js1720574965289328540 0
 75/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/internals1720488220028969142 1
 101/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_inherits_loose/package.json1720488222992003718 0
 130/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/api/inheritance.schema.json1720488220361973028 0
@@ -5412,7 +5412,7 @@
 124/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-js/node_modules/regenerator-runtime/runtime.js1720488227727058972 0
 85/home/devartist/pr/fictional-tribble/forkify/node_modules/.bin/update-browserslist-db1720488332079276683 0
 114/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/lib/path.js1720488222320995888 0
-60/home/devartist/pr/fictional-tribble/forkify/src/js/model.js1720489515424326403 0
+60/home/devartist/pr/fictional-tribble/forkify/src/js/model.js1720575627440511111 0
 107/home/devartist/pr/fictional-tribble/forkify/node_modules/caniuse-lite/data/features/input-file-multiple.js1720488226922049578 0
 88/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/actual/symbol/split.js1720488219873967333 0
 108/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-babel/lib/remapAstLocations.js1720488223584010626 0
@@ -5557,8 +5557,8 @@
 136/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/removeAttributesBySelector.js1720488222803001512 0
 86/home/devartist/pr/fictional-tribble/forkify/node_modules/css-tree/cjs/utils/clone.cjs1720488221399985140 0
 91/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/actual/promise/finally.js1720488219587963996 0
-68/home/devartist/pr/fictional-tribble/forkify/dist/icons.21bad73c.svg1720488147640125427 0
-75/home/devartist/pr/fictional-tribble/forkify/src/js/views/paginationView.js1720488147642125450 0
+68/home/devartist/pr/fictional-tribble/forkify/dist/icons.21bad73c.svg1720489358781458700 0
+75/home/devartist/pr/fictional-tribble/forkify/src/js/views/paginationView.js1720575647621802923 0
 86/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/symbol/species.js1720488219870967298 0
 100/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_class_private_field_update1720488222989003683 1
 131/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/pseudo/matches.js1720488229970085146 0
@@ -6111,7 +6111,7 @@
 82/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/reporter-cli/src1720488227346054526 1
 106/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/features/function/virtual/demethodize.js1720488219455962455 0
 76/home/devartist/pr/fictional-tribble/forkify/node_modules/boolbase/README.md1720488219315960822 0
-60/home/devartist/pr/fictional-tribble/forkify/dist/index.html1720488147641125438 0
+60/home/devartist/pr/fictional-tribble/forkify/dist/index.html1720489358786458759 0
 87/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/full/set-immediate.js1720488219847967030 0
 114/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/svgo/lib/svgo/coa.js1720488222690000194 0
 103/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_array_with_holes/package.json1720488222985003636 0
@@ -8594,7 +8594,7 @@
 104/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/internals/array-species-constructor.js1720488219403961849 0
 96/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/internals/array-to-reversed.js1720488219403961849 0
 106/home/devartist/pr/fictional-tribble/forkify/node_modules/caniuse-lite/data/features/css-letter-spacing.js1720488226543045156 0
-71/home/devartist/pr/fictional-tribble/forkify/dist/index.e37f48ea.js.map1720488147641125438 0
+71/home/devartist/pr/fictional-tribble/forkify/dist/index.e37f48ea.js.map1720489515476327023 0
 87/home/devartist/pr/fictional-tribble/forkify/node_modules/css-select/lib/general.js.map1720488224347019530 0
 94/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/internals/array-unique-by.js1720488219403961849 0
 88/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/features/dom-exception1720488219936968068 1
