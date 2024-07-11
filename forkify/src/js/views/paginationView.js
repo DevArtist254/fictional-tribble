@@ -67,7 +67,7 @@ class PaginationView extends View {
     }
 
     //if no pages
-    return "Hello world";
+    return "";
   }
 }
 

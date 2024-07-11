@@ -622,9 +622,19 @@ const controlSearchResults = async function() {
         console.log(err);
     }
 };
-(0, _recipeViewJsDefault.default).addHandlerRender(controlRecipe);
-(0, _searchViewJsDefault.default).addHandlerSearch(controlSearchResults);
-console.log("Hello world");
+const controlPagination = function(goToPage) {
+    //Update the recipe servings (in state)
+    (0, _resultsViewJsDefault.default).render(_modelJs.getSearchResultsPage(goToPage));
+    //Render New pagn
+    (0, _paginationViewJsDefault.default).render(_modelJs.state.search);
+};
+const init = function() {
+    (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipe);
+    (0, _searchViewJsDefault.default).addHandlerSearch(controlSearchResults);
+    (0, _paginationViewJsDefault.default).addHandlerClick(controlPagination);
+    console.log("Hello world");
+};
+init();
 
 },{"./model.js":"Y4A21","./config.js":"k5Hzs","./views/recipeView.js":"l60JC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","./views/searchView.js":"9OQAM","regenerator-runtime/runtime":"dXNgZ","./views/resultsView.js":"cSbZE","./views/paginationView.js":"6z7bi"}],"Y4A21":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -641,7 +651,7 @@ const state = {
         query: "",
         results: [],
         page: 1,
-        resultsPerPage: (0, _configJs.RES_PER_PAGE)
+        resultsPage: (0, _configJs.RES_PER_PAGE)
     },
     bookmarks: []
 };
@@ -3114,9 +3124,7 @@ class ResultsView extends (0, _viewJsDefault.default) {
     _errorMessage = "No recipes found for your query! Please try again";
     _message = "";
     _generateMarkup() {
-        return this._data.map((result)=>{
-            return (0, _previewViewJsDefault.default).render(result, false);
-        }).join("");
+        return this._data.map((result)=>(0, _previewViewJsDefault.default).render(result, false)).join("");
     }
 }
 exports.default = new ResultsView();
@@ -3204,7 +3212,7 @@ class PaginationView extends (0, _viewDefault.default) {
             </svg>
         </button>`;
         //if no pages
-        return "Hello world";
+        return "";
     }
 }
 exports.default = new PaginationView();
