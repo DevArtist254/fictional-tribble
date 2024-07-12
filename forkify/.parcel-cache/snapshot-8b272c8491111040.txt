@@ -5258,7 +5258,7 @@
 87/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-babel/lib1720488223584010626 1
 75/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/graph/src1720488228303065694 1
 141/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/PseudoClassSelector.js1720488230041085975 0
-71/home/devartist/pr/fictional-tribble/forkify/src/js/views/recipeView.js1720488147642125450 0
+71/home/devartist/pr/fictional-tribble/forkify/src/js/views/recipeView.js1720661849278550364 0
 82/home/devartist/pr/fictional-tribble/forkify/node_modules/semver/internal/debug.js1720488219351961242 0
 73/home/devartist/pr/fictional-tribble/forkify/node_modules/htmlparser2/lib1720488220004968862 1
 88/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/es/set/intersection.js1720488219706965384 0
@@ -5321,7 +5321,7 @@
 96/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_using_ctx/package.json1720488223001003823 0
 84/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/utils/package.json1720488228751070922 0
 100/home/devartist/pr/fictional-tribble/forkify/node_modules/caniuse-lite/data/features/svg-fragment.js1720488228383066627 0
-65/home/devartist/pr/fictional-tribble/forkify/src/js/controller.js1720659148525459775 0
+65/home/devartist/pr/fictional-tribble/forkify/src/js/controller.js1720661870395803326 0
 75/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/internals1720488220028969142 1
 101/home/devartist/pr/fictional-tribble/forkify/node_modules/@swc/helpers/_/_inherits_loose/package.json1720488222992003718 0
 130/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/api/inheritance.schema.json1720488220361973028 0
@@ -5412,7 +5412,7 @@
 124/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-js/node_modules/regenerator-runtime/runtime.js1720488227727058972 0
 85/home/devartist/pr/fictional-tribble/forkify/node_modules/.bin/update-browserslist-db1720488332079276683 0
 114/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/lib/path.js1720488222320995888 0
-60/home/devartist/pr/fictional-tribble/forkify/src/js/model.js1720659088019706801 0
+60/home/devartist/pr/fictional-tribble/forkify/src/js/model.js1720662059541116121 0
 107/home/devartist/pr/fictional-tribble/forkify/node_modules/caniuse-lite/data/features/input-file-multiple.js1720488226922049578 0
 88/home/devartist/pr/fictional-tribble/forkify/node_modules/core-js/actual/symbol/split.js1720488219873967333 0
 108/home/devartist/pr/fictional-tribble/forkify/node_modules/@parcel/transformer-babel/lib/remapAstLocations.js1720488223584010626 0
