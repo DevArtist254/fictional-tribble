@@ -4,6 +4,7 @@ import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
 import resultsView from './views/resultsView.js';
 import paginationView from './views/paginationView.js'
+import bookmarksView from './views/bookmarksView.js';
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
@@ -60,11 +61,30 @@ const controlServings = function (newServings) {
     recipeView.update(model.state.recipe);
 }
 
+const controlAddBookmark = function () {
+
+    if(!model.state.recipe.bookmarked) {
+        model.addBookmark(model.state.recipe);
+    }else{
+        model.deleteBookmark(model.state.recipe.id);
+    }
+
+    recipeView.render(model.state.recipe);
+
+    bookmarksView.render(model.state.bookmarks);
+}
+
+const controlBookmarks = function (){
+    console.log(model.state.bookmarks);
+    bookmarksView.render(model.state.bookmarks);
+}
+
 const init = function () {
  
     recipeView.addHandlerRender(controlRecipe);
     recipeView.addHandlerUpdateServings(controlServings);
-
+    bookmarksView.addHandlerRender(controlBookmarks);
+    recipeView.addHandlerAddBookmark(controlAddBookmark);
     searchView.addHandlerSearch(controlSearchResults);
     paginationView.addHandlerClick(controlPagination);
     console.log("Hello world");
